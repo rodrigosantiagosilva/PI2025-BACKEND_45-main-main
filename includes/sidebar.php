@@ -34,11 +34,11 @@
     ];
   ?>
 
-  <ul class="nav nav-pills flex-column mb-auto">
-    <li><a href="hub.php" class="nav-link <?= $currentPage=='hub.php'?'active':'' ?>"><i class="fas fa-home me-2"></i>Início</a></li>
-    <li><a href="explorar.php" class="nav-link <?= $currentPage=='explorar.php'?'active':'' ?>"><i class="fas fa-compass me-2"></i>Explorar</a></li>
-    <li><a href="chat.php" class="nav-link d-flex justify-content-between align-items-center <?= $currentPage=='chat.php'?'active':'' ?>"><span><i class="fas fa-comment me-2"></i>Mensagens</span><span class="badge bg-danger">7</span></a></li>
-    <li><a href="comunidades.php" class="nav-link <?= $currentPage=='comunidades.php'?'active':'' ?>"><i class="fas fa-users me-2"></i>Comunidades</a></li>
+  <ul class="nav nav-pills flex-column  mb-auto">
+    <li><a href="hub.php" class="nav-link mb-2 <?= $currentPage=='hub.php'?'active':'' ?>"><i class="fas fa-home me-2"></i>Início</a></li>
+    <li><a href="explorar.php" class="nav-link mb-2 <?= $currentPage=='explorar.php'?'active':'' ?>"><i class="fas fa-compass me-2"></i>Explorar</a></li>
+    <li><a href="chat.php" class="nav-link mb-2 d-flex justify-content-between align-items-center <?= $currentPage=='chat.php'?'active':'' ?>"><span><i class="fas fa-comment me-2"></i>Mensagens</span><span class="badge bg-danger">7</span></a></li>
+    <li><a href="comunidades.php" class="nav-link mb-2 <?= $currentPage=='comunidades.php'?'active':'' ?>"><i class="fas fa-users me-2"></i>Comunidades</a></li>
 
     <?php foreach($menus as $menu): ?>
       <?php $isActive = in_array($currentPage, $menu['pages']); ?>
