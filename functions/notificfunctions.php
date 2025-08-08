@@ -1,46 +1,5 @@
 
 <?php
-if (isset($_POST['action'])) {
-    $action = $_POST['action'];
-    $id = intval($_POST['notification_id'] ?? 0);
-
-    if ($action === 'mark_read' && $id > 0) {
-        if (markRead($pdo, $id)) {
-            $_SESSION['message'] = "Notificação marcada como lida";
-        }
-    }
-    elseif ($action === 'mark_all_read') {
-        if (markAllRead($pdo)) {
-            $_SESSION['message'] = "Todas as notificações foram marcadas como lidas";
-        }
-    }
-    elseif ($action === 'delete' && $id > 0) {
-        if (deleteNotification($pdo, $id)) {
-            $_SESSION['message'] = "Notificação removida";
-        }
-    }
-
-    // Redirecionamento seguro
-    $redirect_url = 'notifications.php';
-    if (isset($_GET['type'])) {
-        $redirect_url .= '?type=' . urlencode($_GET['type']);
-    }
-    header('Location: ' . $redirect_url);
-    exit;
-}
-
-// Pega o filtro ativo, padrão 'all'
-$activeTab = $_GET['type'] ?? 'all';
-
-// Busca notificações conforme filtro
-$notifications = getNotifications($pdo, $activeTab);
-
-// Contagem de notificações não lidas por tipo
-$allUnreadCount      = countUnread($pdo, 'all');
-$academicUnreadCount = countUnread($pdo, 'academic');
-$calendarUnreadCount = countUnread($pdo, 'calendar');
-$materialsUnreadCount = countUnread($pdo, 'materials');
-
 function getNotificationIcon($notification)
 {
     if ($notification['type'] === 'academic') {
