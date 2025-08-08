@@ -52,7 +52,7 @@ $activeTab = $_GET['tab'] ?? 'account';
     </style>
 </head>
 <body>
-<?php include 'sidebar.php' ?>
+<?php include 'includes/sidebar.php'?>
     <div class="settings-container content-wrapper">
         <h1 class="settings-title">Configurações</h1>
         

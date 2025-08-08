@@ -38,7 +38,7 @@ include 'includes/header.php';
 </head>
 
 <body>
-    <?php include 'sidebar.php' ?>
+    <?php include 'includes/sidebar.php'?>
     <div class="tydrapi-container py-6 content-wrapper">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h1 class="h2 fw-bold">Notificações</h1>

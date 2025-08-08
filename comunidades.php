@@ -74,7 +74,7 @@ $eventos = buscarEventos($pdo);
     <?php include 'includes/header.php' ?>
 </head>
 <body>
-    <?php include 'sidebar.php' ?>
+    <?php include 'includes/sidebar.php'?>
     <div class="content-wrapper">
         <div class="communities-header">
             <h1 class="communities-title">Comunidades</h1>

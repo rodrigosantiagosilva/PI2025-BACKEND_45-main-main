@@ -64,7 +64,7 @@ $atividades = buscarAtividadesUsuario($pdo, $usuarioAtualId);
     <?php include 'includes/header.php' ?>
 </head>
 <body>
-    <?php include 'sidebar.php' ?>
+    <?php include 'includes/sidebar.php'?>
     <div class="perfil-body content-wrapper">
         <div class="perfil-container perfil-animate-fade-in">
             <div class="perfil-flex perfil-flex-col perfil-md-flex-row perfil-gap-6">

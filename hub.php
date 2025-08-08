@@ -47,7 +47,7 @@ $pendingConnections = [
 <body>
 <div class="d-flex vh-100 w-150">
   <!-- Sidebar -->
-  <?php include 'sidebar.php' ?>
+  <?php include 'includes/sidebar.php'?>
 
   <!-- Main Content -->
   <div class="flex-fill overflow-auto">

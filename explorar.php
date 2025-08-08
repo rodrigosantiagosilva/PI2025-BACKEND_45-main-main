@@ -81,7 +81,7 @@ if (!in_array($active_tab, $valid_tabs)) {
 </head>
 <body>
     <!-- Sidebar -->
-    <?php include 'sidebar.php' ?>
+    <?php include 'includes/sidebar.php'?>
     <div class="d-flex">
         <!-- Main content -->
         <div class="content-wrapper">

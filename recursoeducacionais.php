@@ -13,7 +13,7 @@
     <?php include 'includes/header.php' ?>
 </head>
 <body>
-    <?php include 'sidebar.php' ?>
+    <?php include 'includes/sidebar.php'?>
     <div class="content-wrapper">
         <!-- Cabeçalho de recursos -->
         <div class="resources-header">

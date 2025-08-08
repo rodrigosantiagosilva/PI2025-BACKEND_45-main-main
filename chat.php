@@ -178,7 +178,7 @@ $current_conversation = $conversations[$active_conversation_id];
     <?php include 'includes/header.php' ?>
 </head>
 <body>
-    <?php include 'sidebar.php' ?>
+    <?php include 'includes/sidebar.php'?>
     
     <div class="chat-container">
         <!-- Sidebar/Conversations List -->
